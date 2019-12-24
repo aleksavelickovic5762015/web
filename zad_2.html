@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#drzava{
+ width:150px;   
+}
+
+.ellipsis {
+    position: relative;
+}
+.ellipsis:before {
+    content: '&nbsp;';
+    visibility: hidden;
+}
+.ellipsis span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+}
+</style>
+<title>Zadatak 2</title>
+</head>
+<body bgcolor="#bbbbbb">
+<h2><i><center>Zadatak 2</center></i></h2>
+<hr>
+
+<form >
+  <table align="center" style="background-color:#ffbb55;padding-right: 200px">
+      <tr>
+        <td>Ime i prezime:</td>
+        <td>
+            <input type="text" name="ime" size="30">
+        </td>
+      </tr>
+      <tr>
+        <td>Ulica:</td>
+        <td>
+            <input type="text" name="ulica">
+        </td>
+        <td>Broj:</td>
+        <td>
+            <input type="text" name="broj" size="10">
+        </td>
+      </tr>
+      <tr>
+        <td>Poštanski broj:</td>
+        <td>
+            <input type="text" name="Pbroj" size="10">
+        </td>
+      </tr>
+      <tr>
+        <td>Grad:</td>
+        <td>
+            <input type="text" name="grad" value="Kragujevac">
+        </td>
+        <td>Država:</td>
+        <td>
+            <select name="drzava" id="drzava">
+                <option value="srbija" selected="selected">Srbija</option>
+                <option value="cg">CG</option>
+                <option value="BiH">BiH</option>
+                <option value="hrvatska">Hrvatska</option>
+                <option value="slovenija">Slovenija</option>
+                <option value="makedonija">Makedonija</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+          <td>Pol:</td>
+          <td>
+            Muški<input type="radio" name="pol" value="muski" checked="checked"><br>
+            Ženski<input type="radio" name="pol" value="zenski"><br>
+          </td>
+      </tr>
+      <tr>
+          <td style="padding-right:2em;">Omiljeni sladoled:</td>
+          <td colspan="3" class="ellipsis">
+            <span>
+                Vanila<input type="checkbox" name="sladoled" value="vanila"
+                        style="margin-left: 45px; margin-right: 60px;">
+                Čokolada<input type="checkbox" name="sladoled" value="cokolada" checked
+                        style="margin-left: 45px; margin-right: 75px;">
+                Jagoda<input type="checkbox" name="sladoled" value="jagoda"
+                        style="margin-left: 45px; margin-right: 55px;">
+                Karamela<input type="checkbox" name="sladoled" value="karamela"
+                        style="margin-left: 45px; margin-right: 60px;">
+            </span>
+          </td>
+      </tr>
+      <tr>
+        <td>Korisničko ime:</td>
+        <td>
+            <input type="text" name="Kime">
+        </td>
+        <td>Lozinka:</td>
+        <td>
+            <input type="text" name="broj">
+        </td>
+      </tr>
+      <tr>
+          <td>Komentar:</td>
+          <td colspan="3">
+              <textarea rows="5" cols="65" name="komentar">Ovde ispisati komentar
+              </textarea>
+          </td>
+      </tr>
+      <tr>
+          <td></td>
+          <td colspan="3" align="center">
+              <button type="submit" value="Submit">Potvrdi</button>
+              <button type="submit" value="Submit">Odustani</button>
+          </td>
+      </tr>
+  </table>
+</form> 
+
+</body>
+</html>
+
